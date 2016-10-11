@@ -9,6 +9,8 @@
 #import "GalleryCollectionViewDataSource.h"
 #import "GalleryCollectionViewCell.h"
 #import "Photo.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
 
 @interface GalleryCollectionViewDataSource ()
 
@@ -32,6 +34,9 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     GalleryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"galleryCellReuseID" forIndexPath:indexPath];
+    
+    Photo *photo = self.photos[indexPath.row];
+    [cell.photoImageView sd_setImageWithURL:photo.imageURL placeholderImage:nil options:SDWebImageRefreshCached];
     
     return cell;
 }

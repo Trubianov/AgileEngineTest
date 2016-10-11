@@ -7,4 +7,6 @@ target 'AgileEngine' do
 
   # Pods for AgileEngine
   
+  pod 'SDWebImage', '~>3.8'
+  
 end
