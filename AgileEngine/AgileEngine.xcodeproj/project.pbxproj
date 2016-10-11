@@ -13,9 +13,11 @@
 		3AACBE3C1DAD1023004A9E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AACBE3A1DAD1023004A9E8F /* Main.storyboard */; };
 		3AACBE3E1DAD1023004A9E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AACBE3D1DAD1023004A9E8F /* Assets.xcassets */; };
 		3AACBE411DAD1023004A9E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AACBE3F1DAD1023004A9E8F /* LaunchScreen.storyboard */; };
+		4B2767277DA58329CB7C532F /* libPods-AgileEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1C1B47B650D5BDC65DC3C9 /* libPods-AgileEngine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3075983ADB96B16602221577 /* Pods-AgileEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgileEngine/Pods-AgileEngine.release.xcconfig"; sourceTree = "<group>"; };
 		3AACBE2E1DAD1023004A9E8F /* AgileEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AACBE321DAD1023004A9E8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AACBE341DAD1023004A9E8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		3AACBE3D1DAD1023004A9E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AACBE401DAD1023004A9E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AACBE421DAD1023004A9E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E1C1B47B650D5BDC65DC3C9 /* libPods-AgileEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AgileEngine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3FECB8AAE85448EB97769F4 /* Pods-AgileEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgileEngine/Pods-AgileEngine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B2767277DA58329CB7C532F /* libPods-AgileEngine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				3AACBE301DAD1023004A9E8F /* AgileEngine */,
 				3AACBE2F1DAD1023004A9E8F /* Products */,
+				C07D461EFA490E630BFF1BF9 /* Pods */,
+				61165D6851CBEC77841C9598 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		61165D6851CBEC77841C9598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E1C1B47B650D5BDC65DC3C9 /* libPods-AgileEngine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C07D461EFA490E630BFF1BF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3FECB8AAE85448EB97769F4 /* Pods-AgileEngine.debug.xcconfig */,
+				3075983ADB96B16602221577 /* Pods-AgileEngine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AACBE451DAD1023004A9E8F /* Build configuration list for PBXNativeTarget "AgileEngine" */;
 			buildPhases = (
+				CDCDF3E8E19B77FBE77F5EC3 /* [CP] Check Pods Manifest.lock */,
 				3AACBE2A1DAD1023004A9E8F /* Sources */,
 				3AACBE2B1DAD1023004A9E8F /* Frameworks */,
 				3AACBE2C1DAD1023004A9E8F /* Resources */,
+				411DA210A1433F9D96423936 /* [CP] Embed Pods Frameworks */,
+				1E234520030C12D56742B918 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E234520030C12D56742B918 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AgileEngine/Pods-AgileEngine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		411DA210A1433F9D96423936 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AgileEngine/Pods-AgileEngine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDCDF3E8E19B77FBE77F5EC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AACBE2A1DAD1023004A9E8F /* Sources */ = {
@@ -263,6 +338,7 @@
 		};
 		3AACBE461DAD1023004A9E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FECB8AAE85448EB97769F4 /* Pods-AgileEngine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AgileEngine/Info.plist;
@@ -274,6 +350,7 @@
 		};
 		3AACBE471DAD1023004A9E8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3075983ADB96B16602221577 /* Pods-AgileEngine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AgileEngine/Info.plist;
@@ -302,6 +379,7 @@
 				3AACBE471DAD1023004A9E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
