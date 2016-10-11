@@ -12,6 +12,7 @@
 		3AACBE3C1DAD1023004A9E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AACBE3A1DAD1023004A9E8F /* Main.storyboard */; };
 		3AACBE3E1DAD1023004A9E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AACBE3D1DAD1023004A9E8F /* Assets.xcassets */; };
 		3AACBE411DAD1023004A9E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AACBE3F1DAD1023004A9E8F /* LaunchScreen.storyboard */; };
+		3AACBE4E1DAD1EAF004A9E8F /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AACBE4D1DAD1EAF004A9E8F /* NetworkManager.m */; };
 		4B2767277DA58329CB7C532F /* libPods-AgileEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1C1B47B650D5BDC65DC3C9 /* libPods-AgileEngine.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 		3AACBE401DAD1023004A9E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AACBE421DAD1023004A9E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AACBE4B1DAD1A41004A9E8F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3AACBE4C1DAD1EAF004A9E8F /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		3AACBE4D1DAD1EAF004A9E8F /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		3E1C1B47B650D5BDC65DC3C9 /* libPods-AgileEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AgileEngine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FECB8AAE85448EB97769F4 /* Pods-AgileEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AgileEngine/Pods-AgileEngine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +66,8 @@
 		3AACBE301DAD1023004A9E8F /* AgileEngine */ = {
 			isa = PBXGroup;
 			children = (
+				3AACBE4C1DAD1EAF004A9E8F /* NetworkManager.h */,
+				3AACBE4D1DAD1EAF004A9E8F /* NetworkManager.m */,
 				3AACBE4B1DAD1A41004A9E8F /* Constants.h */,
 				3AACBE341DAD1023004A9E8F /* AppDelegate.h */,
 				3AACBE351DAD1023004A9E8F /* AppDelegate.m */,
@@ -222,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AACBE361DAD1023004A9E8F /* AppDelegate.m in Sources */,
+				3AACBE4E1DAD1EAF004A9E8F /* NetworkManager.m in Sources */,
 				3AACBE331DAD1023004A9E8F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
