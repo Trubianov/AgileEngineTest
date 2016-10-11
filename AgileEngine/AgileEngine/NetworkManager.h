@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class Photo;
+
+typedef void (^CompletionBlock) (NSArray<Photo *> *photos, NSError *error);
+
 @interface NetworkManager : NSObject
 
 + (instancetype)sharedInstance;
 
-- (void)searchImagesWithKey:(NSString *)searchKey;
-
+- (void)searchImagesWithKey:(NSString *)searchKey completion:(CompletionBlock)completion;
 
 @end

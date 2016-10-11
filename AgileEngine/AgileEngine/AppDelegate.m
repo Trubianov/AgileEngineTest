@@ -18,7 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [[NetworkManager sharedInstance] searchImagesWithKey:(@"cat")];
+    [[NetworkManager sharedInstance] searchImagesWithKey:@"cat" completion:^(NSArray<Photo *> *photos, NSError *error) {
+        
+    }];
+     
     
     return YES;
 }
