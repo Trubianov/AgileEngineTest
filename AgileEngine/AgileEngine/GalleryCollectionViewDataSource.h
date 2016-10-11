@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
+@class Photo;
+
 @interface GalleryCollectionViewDataSource : NSObject <UICollectionViewDataSource, UICollectionViewDelegate>
+
+- (void)setGalleryPhotos:(NSArray<Photo *> *)photos;
 
 @end

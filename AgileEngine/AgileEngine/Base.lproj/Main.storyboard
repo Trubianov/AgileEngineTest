@@ -47,7 +47,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="galleryCellReuseID" id="vOC-DS-cXy">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="galleryCellReuseID" id="vOC-DS-cXy" customClass="GalleryCollectionViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -68,6 +68,7 @@
                                             <constraint firstAttribute="trailing" secondItem="b6K-F3-rhO" secondAttribute="trailing" id="s6j-8t-WKH"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="photoImageView" destination="b6K-F3-rhO" id="vgY-pB-N5m"/>
                                             <segue destination="Epm-bx-fFl" kind="show" id="IIl-Jc-cgO"/>
                                         </connections>
                                     </collectionViewCell>
@@ -94,6 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Gallery" id="kdz-vf-Fs2"/>
                     <connections>
+                        <outlet property="galleryCollectionViewDataSource" destination="bCH-C9-gWc" id="2IK-1H-mIe"/>
                         <outlet property="photosCollectionView" destination="hx5-ua-pRe" id="nzS-AK-yge"/>
                     </connections>
                 </viewController>

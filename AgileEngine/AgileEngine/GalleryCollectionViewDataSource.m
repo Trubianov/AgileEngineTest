@@ -7,7 +7,7 @@
 //
 
 #import "GalleryCollectionViewDataSource.h"
-
+#import "GalleryCollectionViewCell.h"
 #import "Photo.h"
 
 @interface GalleryCollectionViewDataSource ()
@@ -18,6 +18,11 @@
 
 @implementation GalleryCollectionViewDataSource
 
+- (void)setGalleryPhotos:(NSArray<Photo *> *)photos
+{
+    self.photos = photos;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.photos.count;
@@ -26,7 +31,7 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"galleryCellReuseID" forIndexPath:indexPath];
+    GalleryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"galleryCellReuseID" forIndexPath:indexPath];
     
     return cell;
 }
