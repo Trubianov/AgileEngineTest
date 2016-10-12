@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '29725BAF8F2F8A313519EC9533F3F14A'
+               BlueprintIdentifier = '62CF30BC632C3C849E038C352FB35CA9'
                BlueprintName = 'Pods-AgileEngine'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-AgileEngine.a'>

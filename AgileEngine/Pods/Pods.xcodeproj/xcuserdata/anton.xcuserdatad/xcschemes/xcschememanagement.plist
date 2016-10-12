@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-AgileEngine.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>17E88F23418DDB594F4D5881DD17383D</key>
+		<key>62CF30BC632C3C849E038C352FB35CA9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>29725BAF8F2F8A313519EC9533F3F14A</key>
+		<key>9C7C0314ADE9B46911DEF03C02B791FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D058B89EB3B3DF45457A2DCD3971AFFE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

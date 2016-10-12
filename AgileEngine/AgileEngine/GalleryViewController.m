@@ -9,6 +9,7 @@
 #import "GalleryViewController.h"
 #import "GalleryCollectionViewDataSource.h"
 #import "NetworkManager.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface GalleryViewController () <UISearchBarDelegate>
 
@@ -26,15 +27,17 @@
     
     if (searchBar.text.length > 0)
     {
+        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         [[NetworkManager sharedInstance] searchImagesWithKey:searchBar.text completion:^(NSArray<Photo *> *photos, NSError *error) {
-            
-            if (!error && photos.count > 0)
-            {
-                [self.galleryCollectionViewDataSource setGalleryPhotos:photos];
-            }
-            
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self.photosCollectionView reloadData];
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+                if (!error && photos.count > 0)
+                {
+                    [self.galleryCollectionViewDataSource setGalleryPhotos:photos];
+                    
+                    [self.photosCollectionView reloadData];
+                }
+
             });
         }];
     }
