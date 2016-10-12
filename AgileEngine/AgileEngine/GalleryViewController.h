@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, PhotoDisplayMode) {
+    PhotoDisplayModeSingle = 1,
+    PhotoDisplayModeDouble,
+    PhotoDisplayModeTripple
+};
+
 @interface GalleryViewController : UIViewController
 
 @end

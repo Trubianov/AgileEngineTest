@@ -11,15 +11,25 @@
 #import "NetworkManager.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
-@interface GalleryViewController () <UISearchBarDelegate>
+
+@interface GalleryViewController () <UISearchBarDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet GalleryCollectionViewDataSource *galleryCollectionViewDataSource;
 
 @property (weak, nonatomic) IBOutlet UICollectionView *photosCollectionView;
 
+@property (nonatomic, assign) PhotoDisplayMode displayMode;
+
 @end
 
 @implementation GalleryViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.displayMode = PhotoDisplayModeSingle;
+}
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
@@ -43,5 +53,20 @@
     }
 }
 
+- (IBAction)singleLineButtonTapped:(UIBarButtonItem *)sender {
+    [self.photosCollectionView.collectionViewLayout invalidateLayout];
+    self.displayMode = PhotoDisplayModeSingle;
+    
+}
+
+- (IBAction)doubleLineButtonTapped:(UIBarButtonItem *)sender {
+    [self.photosCollectionView.collectionViewLayout invalidateLayout];
+    self.displayMode = PhotoDisplayModeDouble;
+}
+
+- (IBAction)trippleLineButtonTapped:(UIBarButtonItem *)sender {
+    [self.photosCollectionView.collectionViewLayout invalidateLayout];
+    self.displayMode = PhotoDisplayModeTripple;
+}
 
 @end

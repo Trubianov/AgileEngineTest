@@ -31,11 +31,23 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHh-Yl-auv">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem title="Single" id="dmc-ds-LSb"/>
+                                    <barButtonItem title="Single" id="dmc-ds-LSb">
+                                        <connections>
+                                            <action selector="singleLineButtonTapped:" destination="BYZ-38-t0r" id="h3K-68-gwo"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Rik-jA-cmw"/>
-                                    <barButtonItem title="Double" id="AXg-QV-dh0"/>
+                                    <barButtonItem title="Double" id="AXg-QV-dh0">
+                                        <connections>
+                                            <action selector="doubleLineButtonTapped:" destination="BYZ-38-t0r" id="XKh-xM-cLu"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ovB-2k-Me0"/>
-                                    <barButtonItem title="Tripple" id="FMe-iH-99Y"/>
+                                    <barButtonItem title="Tripple" id="FMe-iH-99Y">
+                                        <connections>
+                                            <action selector="trippleLineButtonTapped:" destination="BYZ-38-t0r" id="Ddc-73-5ic"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hx5-ua-pRe">
@@ -82,7 +94,7 @@
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="bCH-C9-gWc" id="HhI-4f-qYj"/>
-                                    <outlet property="delegate" destination="bCH-C9-gWc" id="Vlh-zJ-Mda"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="09f-67-Yvb"/>
                                 </connections>
                             </collectionView>
                         </subviews>

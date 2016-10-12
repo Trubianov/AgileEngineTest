@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A2017F61DAE362C007906A6 /* GalleryViewController+CollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2017F51DAE362C007906A6 /* GalleryViewController+CollectionViewDelegate.m */; };
 		3AACBE331DAD1023004A9E8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AACBE321DAD1023004A9E8F /* main.m */; };
 		3AACBE361DAD1023004A9E8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AACBE351DAD1023004A9E8F /* AppDelegate.m */; };
 		3AACBE3C1DAD1023004A9E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AACBE3A1DAD1023004A9E8F /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		3075983ADB96B16602221577 /* Pods-AgileEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgileEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-AgileEngine/Pods-AgileEngine.release.xcconfig"; sourceTree = "<group>"; };
+		3A2017F41DAE362C007906A6 /* GalleryViewController+CollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GalleryViewController+CollectionViewDelegate.h"; sourceTree = "<group>"; };
+		3A2017F51DAE362C007906A6 /* GalleryViewController+CollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GalleryViewController+CollectionViewDelegate.m"; sourceTree = "<group>"; };
 		3AACBE2E1DAD1023004A9E8F /* AgileEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgileEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AACBE321DAD1023004A9E8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3AACBE341DAD1023004A9E8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 			children = (
 				3AACBE581DAD366B004A9E8F /* GalleryViewController.h */,
 				3AACBE591DAD366B004A9E8F /* GalleryViewController.m */,
+				3A2017F41DAE362C007906A6 /* GalleryViewController+CollectionViewDelegate.h */,
+				3A2017F51DAE362C007906A6 /* GalleryViewController+CollectionViewDelegate.m */,
 				3AACBE5C1DAD3945004A9E8F /* GalleryCollectionViewDataSource.h */,
 				3AACBE5D1DAD3945004A9E8F /* GalleryCollectionViewDataSource.m */,
 				3AACBE5F1DAD3B72004A9E8F /* GalleryCollectionViewCell.h */,
@@ -285,6 +290,7 @@
 			files = (
 				3AACBE5E1DAD3945004A9E8F /* GalleryCollectionViewDataSource.m in Sources */,
 				3AACBE361DAD1023004A9E8F /* AppDelegate.m in Sources */,
+				3A2017F61DAE362C007906A6 /* GalleryViewController+CollectionViewDelegate.m in Sources */,
 				3AACBE4E1DAD1EAF004A9E8F /* NetworkManager.m in Sources */,
 				3AACBE331DAD1023004A9E8F /* main.m in Sources */,
 				3AACBE541DAD2F95004A9E8F /* Photo.m in Sources */,
