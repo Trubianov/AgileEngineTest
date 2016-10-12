@@ -36,7 +36,10 @@
     GalleryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"galleryCellReuseID" forIndexPath:indexPath];
     
     Photo *photo = self.photos[indexPath.row];
-    [cell.photoImageView sd_setImageWithURL:photo.imageURL placeholderImage:nil options:SDWebImageRefreshCached];
+    cell.activityIndicator.hidden = NO;
+    [cell.photoImageView sd_setImageWithURL:photo.imageURL placeholderImage:nil options:SDWebImageRefreshCached completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        cell.activityIndicator.hidden = YES;
+    }];
     
     return cell;
 }

@@ -40,6 +40,7 @@
                             </toolbar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hx5-ua-pRe">
                                 <rect key="frame" x="0.0" y="108" width="600" height="448"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K0y-ug-vu0">
                                     <size key="itemSize" width="160" height="135"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -56,18 +57,24 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b6K-F3-rhO">
                                                     <rect key="frame" x="0.0" y="0.0" width="160" height="135"/>
-                                                    <color key="backgroundColor" red="0.94274779040000001" green="0.1434522359" blue="0.13191179250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </imageView>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="EHQ-hh-TM8">
+                                                    <rect key="frame" x="70" y="57" width="20" height="20"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="EHQ-hh-TM8" firstAttribute="centerX" secondItem="b6K-F3-rhO" secondAttribute="centerX" id="ACq-Zp-nmR"/>
                                             <constraint firstItem="b6K-F3-rhO" firstAttribute="leading" secondItem="vOC-DS-cXy" secondAttribute="leading" id="PIr-28-h1r"/>
                                             <constraint firstAttribute="bottom" secondItem="b6K-F3-rhO" secondAttribute="bottom" id="Pxy-cR-TtK"/>
                                             <constraint firstItem="b6K-F3-rhO" firstAttribute="top" secondItem="vOC-DS-cXy" secondAttribute="top" id="g7L-MU-RSS"/>
+                                            <constraint firstItem="EHQ-hh-TM8" firstAttribute="centerY" secondItem="b6K-F3-rhO" secondAttribute="centerY" id="hvf-Fl-wzh"/>
                                             <constraint firstAttribute="trailing" secondItem="b6K-F3-rhO" secondAttribute="trailing" id="s6j-8t-WKH"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="activityIndicator" destination="EHQ-hh-TM8" id="mEB-Ny-YLZ"/>
                                             <outlet property="photoImageView" destination="b6K-F3-rhO" id="vgY-pB-N5m"/>
                                             <segue destination="Epm-bx-fFl" kind="show" id="IIl-Jc-cgO"/>
                                         </connections>

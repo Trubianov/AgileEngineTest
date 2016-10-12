@@ -11,6 +11,7 @@
 @interface GalleryCollectionViewCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
