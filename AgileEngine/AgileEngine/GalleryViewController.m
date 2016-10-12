@@ -53,19 +53,23 @@
     }
 }
 
-- (IBAction)singleLineButtonTapped:(UIBarButtonItem *)sender {
+- (void)setDisplayMode:(PhotoDisplayMode)displayMode
+{
+    _displayMode = displayMode;
+    
     [self.photosCollectionView.collectionViewLayout invalidateLayout];
-    self.displayMode = PhotoDisplayModeSingle;
+}
+
+- (IBAction)singleLineButtonTapped:(UIBarButtonItem *)sender {
+        self.displayMode = PhotoDisplayModeSingle;
     
 }
 
 - (IBAction)doubleLineButtonTapped:(UIBarButtonItem *)sender {
-    [self.photosCollectionView.collectionViewLayout invalidateLayout];
     self.displayMode = PhotoDisplayModeDouble;
 }
 
 - (IBAction)trippleLineButtonTapped:(UIBarButtonItem *)sender {
-    [self.photosCollectionView.collectionViewLayout invalidateLayout];
     self.displayMode = PhotoDisplayModeTripple;
 }
 
