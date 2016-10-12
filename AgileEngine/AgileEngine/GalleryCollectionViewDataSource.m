@@ -11,6 +11,7 @@
 #import "Photo.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
+static NSString *const kCellReuseID = @"galleryCellReuseID";
 
 @interface GalleryCollectionViewDataSource ()
 
@@ -33,7 +34,7 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    GalleryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"galleryCellReuseID" forIndexPath:indexPath];
+    GalleryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCellReuseID forIndexPath:indexPath];
     
     Photo *photo = self.photos[indexPath.row];
     cell.activityIndicator.hidden = NO;
